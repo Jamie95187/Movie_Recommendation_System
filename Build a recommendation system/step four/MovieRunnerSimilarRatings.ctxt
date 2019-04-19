@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=MovieRunnerSimilarRatings
+comment1.params=
+comment1.target=void\ printAverageRatings()
+comment2.params=
+comment2.target=void\ printAverageRatingsByYearAfterAndGenre()
+comment3.params=
+comment3.target=void\ printSimilarRatings()
+comment3.text=public\ void\ testGetSimilarRatings(){\r\n\ \ \ \ \ \ \ \ FourthRatings\ FR\ \=\ new\ FourthRatings("data/ratedmoviesfull.csv",\ "data/ratings.csv");\r\n\ \ \ \ \ \ \ \ RaterDatabase\ RDB\ \=\ new\ RaterDatabase();\r\n\ \ \ \ \ \ \ \ RDB.initialize("data/ratings.csv");\r\n\ \ \ \ \ \ \ \ MovieDatabase\ mdb\ \=\ new\ MovieDatabase();\r\n\ \ \ \ \ \ \ \ mdb.initialize("data/ratedmoviesfull.csv");\r\n\ \ \ \ \ \ \ \ ArrayList<Rating>\ list\ \=\ FR.getSimilarRatings("65",\ 4,\ 5);\r\n\ \ \ \ \ \ \ \ System.out.println(list.size());\r\n\ \ \ \ \ \ \ \ System.out.println(list.get(10).getItem());\r\n}
+comment4.params=
+comment4.target=void\ printSimilarRatingsByGenre()
+comment5.params=
+comment5.target=void\ printSimilarRatingsByDirector()
+comment5.text=public\ void\ printSimilarRatingsByGenre1(){\r\n\ \ \ \ \ \ \ \ FourthRatings\ FR\ \=\ new\ FourthRatings("data/ratedmoviesfull.csv",\ "data/ratings.csv");\r\n\ \ \ \ \ \ \ \ RaterDatabase\ RDB\ \=\ new\ RaterDatabase();\r\n\ \ \ \ \ \ \ \ RDB.initialize("data/ratings.csv");\r\n\ \ \ \ \ \ \ \ MovieDatabase\ mdb\ \=\ new\ MovieDatabase();\r\n\ \ \ \ \ \ \ \ mdb.initialize("data/ratedmoviesfull.csv");\r\n\ \ \ \ \ \ \ \ GenreFilter\ GF\ \=\ new\ GenreFilter("Action");\r\n\ \ \ \ \ \ \ \ ArrayList<Rating>\ list\ \=\ FR.getSimilarRatingsByFilter1("65",\ 20,\ 5,\ GF);\r\n\ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;\ i\ <\ list.size();\ i++){\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("The\ movie\ is\ "\ +\ mdb.getTitle(list.get(i).getItem())\ +\ "\ and\ has\ a\ simlarity\ rating\ of\ "\ +\ list.get(i).getValue());\r\n\ \ \ \ \ \ \ \ }\r\n}
+comment6.params=
+comment6.target=void\ printSimilarRatingsByGenreAndMinutes()
+comment7.params=
+comment7.target=void\ printSimilarRatingsByYearAfterAndMinutes()
+numComments=8

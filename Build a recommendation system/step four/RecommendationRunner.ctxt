@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=RecommendationRunner
+comment1.params=
+comment1.target=java.util.ArrayList\ getItemsToRate()
+comment2.params=webRaterID
+comment2.target=void\ printRecommendationsFor(java.lang.String)
+comment2.text=public\ void\ test(){\r\n\ \ \ \ \ \ \ \ ArrayList<String>\ list\ \=\ getItemsToRate();\r\n\ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;\ i\ <\ list.size();\ i++){\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(list.get(i));\r\n\ \ \ \ \ \ \ \ }\r\n}
+numComments=3
